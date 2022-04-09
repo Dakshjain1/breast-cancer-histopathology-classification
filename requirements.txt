@@ -1,5 +1,6 @@
 keras
 scikit-learn
+tensorflow
 opencv-python
 imutils
 numpy
