@@ -18,16 +18,18 @@ from sklearn.metrics import confusion_matrix
 
 #to save images to background
 #matplotlib.use("Agg")
-dataset_benign='C:/Users/benign'
-dataset_m_ductal='C:/Users/ductal_carcinoma'
-dataset_m_lobular='C:/Users/lobular_carcinoma'
-dataset_m_mucinous='C:/Users/mucinous_carcinoma'
-dataset_m_papillary='C:/Users/papillary_carcinoma'
+
+dataset_benign='/mnt/dataset_benign/'
+dataset_m_ductal='/mnt/dataset_m_ductal/'
+dataset_m_lobular='/mnt/dataset_m_lobular/'
+dataset_m_mucinous='/mnt/dataset_m_mucinous/'
+dataset_m_papillary='/mnt/dataset_m_papillary/'
 model_path="model.h5"
 label_path="/"
 plot_path="/"
 HP_LR=1e-3
-HP_EPOCHS=100
+#HP_EPOCHS=100
+HP_EPOCHS=2
 HP_BS=55
 HP_IMAGE_DIM=(96,96,3)
 data=[]
