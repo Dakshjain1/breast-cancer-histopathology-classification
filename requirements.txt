@@ -1,0 +1,11 @@
+keras
+tensorflow
+scikit-learn
+opencv-python
+imutils
+numpy
+os
+pandas
+matplotlib
+pickle
+random
