@@ -51,7 +51,7 @@ imagepaths=imagepaths_ductal+imagepaths_lobular+imagepaths_mucinous+imagepaths_p
 print(len(imagepaths))
 random.shuffle(imagepaths)
 print()
-#print(imagepaths[1])
+print(imagepaths[1])
 print(len(imagepaths))
 classes=[]
 for imgpath in imagepaths:
