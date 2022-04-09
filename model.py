@@ -57,15 +57,12 @@ classes=[]
 for imgpath in imagepaths:
     try:
         image=cv2.imread(imgpath)
-        print(image)
         image=cv2.resize(image,(96,96))
-        print(image)
         image_array=img_to_array(image)
-        print(image_array)
         data.append(image_array)
         label=imgpath.split('/')[-1]
         print(label)
-        temp=label.split(os.path.sep)[-2]
+        temp=label.split(os.path.sep)[-1]
         print(temp)
         #print(label)
         #if label in ['ductal_carcinoma','papillary_carcinoma','lobular_carcinoma','mucinous_carcinoma']:
