@@ -5,5 +5,3 @@ imutils
 numpy
 pandas
 matplotlib
-pickle
-random
