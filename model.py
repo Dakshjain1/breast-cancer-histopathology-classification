@@ -7,7 +7,8 @@ from keras import backend as k
 
 from keras.preprocessing.image import ImageDataGenerator,img_to_array
 from sklearn.preprocessing import LabelBinarizer
-from keras.optimizers import Adam
+#from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 from sklearn.model_selection import train_test_split
 from imutils import paths
 import numpy as np
