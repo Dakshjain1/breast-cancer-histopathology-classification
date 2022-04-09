@@ -114,37 +114,6 @@ model.add(BatchNormalization(axis=channel_dim))
 model.add(MaxPooling2D(pool_size=(2,2)))
 #model.add(Dropout(0.25))
 
-"""
-#Deleted layers 
-
-model.add(Conv2D(128,(3,3),padding='same'))
-model.add(Activation("relu"))
-model.add(BatchNormalization(axis=channel_dim))
-model.add(Conv2D(128,(3,3),padding='same'))
-model.add(Activation("relu"))
-model.add(BatchNormalization(axis=channel_dim))
-model.add(MaxPooling2D(pool_size=(2,2)))
-model.add(Dropout(0.25))
-
-model.add(Conv2D(128,(3,3),padding='same'))
-model.add(Activation("relu"))
-model.add(BatchNormalization(axis=channel_dim))
-model.add(Conv2D(128,(3,3),padding='same'))
-model.add(Activation("relu"))
-model.add(BatchNormalization(axis=channel_dim))
-model.add(MaxPooling2D(pool_size=(2,2)))
-model.add(Dropout(0.25))
-
-model.add(Conv2D(256,(3,3),padding='same'))
-model.add(Activation("relu"))
-model.add(BatchNormalization(axis=channel_dim))
-model.add(Conv2D(256,(3,3),padding='same'))
-model.add(Activation("relu"))
-model.add(BatchNormalization(axis=channel_dim))
-model.add(MaxPooling2D(pool_size=(2,2)))
-model.add(Dropout(0.25))
-
-"""
 model.add(Flatten())#converts into a single dimensional array
 
 model.add(Dense(1024))
@@ -164,7 +133,7 @@ aug=ImageDataGenerator(rotation_range=0.25,width_shift_range=0.25,height_shift_r
 opt=Adam(lr=HP_LR,decay=HP_LR/HP_EPOCHS)
 model.compile(loss="categorical_crossentropy",optimizer=opt,metrics=['accuracy'])
 history=model.fit_generator(aug.flow(xtrain,ytrain,batch_size=HP_BS),validation_data=(xtest,ytest),steps_per_epoch=len(xtrain)//HP_BS,epochs=HP_EPOCHS)
-model.save('mymodcat2.h5')
+#model.save('mymodcat2.h5')
 
 #loss = history.history['loss']
 #accuracy = history.history['acc']
