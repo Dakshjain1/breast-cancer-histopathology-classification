@@ -4,7 +4,8 @@ Created on Fri Apr  2 00:37:38 2021
 
 @author: maanh
 """
-import tkinter 
+#import tkinter 
+#import tk
 from keras.models import Sequential
 from keras.layers.normalization import BatchNormalization
 from keras.layers.convolutional import Conv2D,MaxPooling2D
