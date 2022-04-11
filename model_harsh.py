@@ -30,11 +30,11 @@ from sklearn.metrics import confusion_matrix
 
 #to save images to background
 matplotlib.use('Qt5Agg')
-dataset_benign='E:\BreaKHis_v1/project-data/benign_tumor'
-dataset_m_ductal='E:\BreaKHis_v1/project-data/ductal_carcinoma'
-dataset_m_lobular='E:\BreaKHis_v1/project-data/lobular_carcinoma'
-dataset_m_mucinous='E:\BreaKHis_v1/project-data/mucinous_carcinoma'
-dataset_m_papillary='E:\BreaKHis_v1/project-data/papillary_carcinoma'
+dataset_benign='/mnt/dataset_benign/'
+dataset_m_ductal='/mnt/dataset_m_ductal/'
+dataset_m_lobular='/mnt/dataset_m_lobular/'
+dataset_m_mucinous='/mnt/dataset_m_mucinous/'
+dataset_m_papillary='/mnt/dataset_m_papillary/'
 model_path="model.h5"
 label_path="/"
 plot_path="/"
@@ -67,6 +67,7 @@ for imgpath in imagepaths:
         image_array=img_to_array(image)
         data.append(image_array)
         label=imgpath.split('/')[-1]
+        print(label)        
         temp=label.split(os.path.sep)[-2]
         print(temp)
         #print(label)
