@@ -32,7 +32,7 @@ from sklearn.metrics import confusion_matrix
 
 
 #to save images to background
-matplotlib.use('Qt5Agg')
+# matplotlib.use('Qt5Agg')
 dataset_benign='/mnt/dataset_benign/'
 dataset_m_ductal='/mnt/dataset_m_ductal/'
 dataset_m_lobular='/mnt/dataset_m_lobular/'
@@ -210,5 +210,5 @@ for i in range(len(predictions)):
     
     
          
-plt.plot(y,x)
-plt.show()
+# plt.plot(y,x)
+# plt.show()
