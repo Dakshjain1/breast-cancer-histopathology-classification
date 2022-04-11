@@ -7,7 +7,8 @@ Created on Fri Apr  2 00:37:38 2021
 #import tkinter 
 #import tk
 from keras.models import Sequential
-from keras.layers.normalization import BatchNormalization
+#from keras.layers.normalization import BatchNormalization
+from tensorflow.keras.layers import BatchNormalization
 from keras.layers.convolutional import Conv2D,MaxPooling2D
 from keras.layers.core import Activation,Flatten,Dense,Dropout
 from keras import backend as k
@@ -15,7 +16,8 @@ import matplotlib.pyplot as plt
 import matplotlib
 from keras.preprocessing.image import ImageDataGenerator,img_to_array
 from sklearn.preprocessing import LabelBinarizer
-from keras.optimizers import Adam
+#from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 from sklearn.model_selection import train_test_split
 from imutils import paths
 import numpy as np
