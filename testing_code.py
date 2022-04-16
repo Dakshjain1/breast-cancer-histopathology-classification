@@ -61,7 +61,7 @@ for imgpath in imagepaths:
         image_array=img_to_array(image)
         data.append(image_array)
         print(imgpath)
-        label=imgpath.split('/')[-1]
+        label=imgpath.split('/')[-2]
 #         temp=label.split(os.path.sep)[-2]
 #         print(temp)
         print(label)
