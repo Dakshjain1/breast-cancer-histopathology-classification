@@ -24,17 +24,17 @@ matplotlib.use('TKAgg')
 
 #to save images to background
 matplotlib.use('Qt5Agg')
-dataset_benign='C:/Users/jonah/OneDrive/Desktop/project-data-20220411T091530Z-003/project-data/benign_tumor'
-dataset_m_ductal='C:/Users/jonah/OneDrive/Desktop/project-data-20220411T091530Z-003/project-data/ductal_carcinoma'
-dataset_m_lobular='C:/Users/jonah/OneDrive/Desktop/project-data-20220411T091530Z-003/project-data/lobular_carcinoma'
-dataset_m_mucinous='C:/Users/jonah/OneDrive/Desktop/project-data-20220411T091530Z-003/project-data/mucinous_carcinoma'
-dataset_m_papillary='C:/Users/jonah/OneDrive/Desktop/project-data-20220411T091530Z-003/project-data/papillary_carcinoma'
+dataset_benign='/mnt/new_data/project-data/benign_tumor'
+dataset_m_ductal='/mnt/new_data/project-data/ductal_carcinoma'
+dataset_m_lobular='/mnt/new_data/project-data/lobular_carcinoma'
+dataset_m_mucinous='/mnt/new_data/project-data/mucinous_carcinoma'
+dataset_m_papillary='/mnt/new_data/project-data/papillary_carcinoma'
 model_path="model.h5"
 
 label_path="/"
 plot_path="/"
 HP_LR=1e-3
-HP_EPOCHS=3
+HP_EPOCHS=2
 HP_BS=55
 HP_IMAGE_DIM=(96,96,3)
 data=[]
