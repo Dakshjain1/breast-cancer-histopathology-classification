@@ -1,4 +1,4 @@
-import tkinter 
+#import tkinter 
 from keras.models import Sequential
 from tensorflow.keras.layers import BatchNormalization
 from keras.layers.convolutional import Conv2D,MaxPooling2D
