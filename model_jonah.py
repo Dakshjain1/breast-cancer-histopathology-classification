@@ -17,7 +17,7 @@ import pickle
 import random
 from sklearn.metrics import confusion_matrix
 
-# matplotlib.use('TKAgg')
+## matplotlib.use('TKAgg')
 # function for creating an identity residual module
 #conda install imutils
 
