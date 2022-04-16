@@ -60,10 +60,11 @@ for imgpath in imagepaths:
         image=cv2.resize(image,(96,96))
         image_array=img_to_array(image)
         data.append(image_array)
-        label=imgpath.split('/')[-2]
-        temp=label.split(os.path.sep)[-2]
-        print(temp)
-        print(label)
+        print(imgpath)
+#         label=imgpath.split('/')[-2]
+#         temp=label.split(os.path.sep)[-2]
+#         print(temp)
+#         print(label)
         #if label in ['ductal_carcinoma','papillary_carcinoma','lobular_carcinoma','mucinous_carcinoma']:
         #  label='malignant'
         #print(label)
