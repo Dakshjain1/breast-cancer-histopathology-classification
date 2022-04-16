@@ -22,7 +22,7 @@ from sklearn.metrics import confusion_matrix
 #conda install imutils
 
 #to save images to background
-matplotlib.use('Qt5Agg')
+# matplotlib.use('Qt5Agg')
 dataset_benign='/mnt/new_data/project-data/benign_tumor'
 dataset_m_ductal='/mnt/new_data/project-data/ductal_carcinoma'
 dataset_m_lobular='/mnt/new_data/project-data/lobular_carcinoma'
