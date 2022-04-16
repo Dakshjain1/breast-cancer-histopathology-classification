@@ -23,11 +23,11 @@ from sklearn.metrics import confusion_matrix
 
 #to save images to background
 # matplotlib.use('Qt5Agg')
-dataset_benign='/mnt/new_data/project-data/benign_tumor'
-dataset_m_ductal='/mnt/new_data/project-data/ductal_carcinoma'
-dataset_m_lobular='/mnt/new_data/project-data/lobular_carcinoma'
-dataset_m_mucinous='/mnt/new_data/project-data/mucinous_carcinoma'
-dataset_m_papillary='/mnt/new_data/project-data/papillary_carcinoma'
+dataset_benign='/mnt/new_data/project-data/benign_tumor/'
+dataset_m_ductal='/mnt/new_data/project-data/ductal_carcinoma/'
+dataset_m_lobular='/mnt/new_data/project-data/lobular_carcinoma/'
+dataset_m_mucinous='/mnt/new_data/project-data/mucinous_carcinoma/'
+dataset_m_papillary='/mnt/new_data/project-data/papillary_carcinoma/'
 model_path="model.h5"
 
 label_path="/"
