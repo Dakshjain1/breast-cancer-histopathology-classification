@@ -68,7 +68,7 @@ for imgpath in imagepaths:
         #if label in ['ductal_carcinoma','papillary_carcinoma','lobular_carcinoma','mucinous_carcinoma']:
         #  label='malignant'
         #print(label)
-       classes.append(label)    
+        classes.append(label)    
     except Exception as e:
         print(e)
 print(classes)
