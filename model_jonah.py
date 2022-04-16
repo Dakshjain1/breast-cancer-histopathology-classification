@@ -61,13 +61,12 @@ for imgpath in imagepaths:
         image_array=img_to_array(image)
         data.append(image_array)
         label=imgpath.split('/')[-2]
-        temp=label.split(os.path.sep)[-2]
-        print(temp)
-        print(label)
+        #temp=label.split(os.path.sep)[-2]
+        #print(temp)
         #if label in ['ductal_carcinoma','papillary_carcinoma','lobular_carcinoma','mucinous_carcinoma']:
         #  label='malignant'
-        #print(label)
-        classes.append(temp)    
+        print(label)
+        classes.append(label)    
     except Exception as e:
         print(e)
 print(classes)
