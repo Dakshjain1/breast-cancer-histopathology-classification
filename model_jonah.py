@@ -1,4 +1,3 @@
-#import tkinter 
 from keras.models import Sequential
 from tensorflow.keras.layers import BatchNormalization
 from keras.layers.convolutional import Conv2D,MaxPooling2D
@@ -18,7 +17,7 @@ import pickle
 import random
 from sklearn.metrics import confusion_matrix
 
-matplotlib.use('TKAgg')
+# matplotlib.use('TKAgg')
 # function for creating an identity residual module
 #conda install imutils
 
